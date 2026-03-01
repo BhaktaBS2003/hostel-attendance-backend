@@ -7,7 +7,8 @@ import https from 'https';
 dotenv.config();
 
 const app = express();
-const PORT =  3001;
+// const PORT =  3001;
+const PORT = process.env.PORT || 3001;
 
 // Create an HTTPS agent that ignores SSL certificate error
 const httpsAgent = new https.Agent({
